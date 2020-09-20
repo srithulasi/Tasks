@@ -1,0 +1,42 @@
+.parent{
+	display: flex;
+	flex-direction: row;
+}
+.side1{
+	width: 20%;
+	height: 100%;
+	border: 2px solid grey;
+	margin: 1%;
+	padding: 1%;
+	text-align: left;
+}
+.side2{
+    height: 100%; 
+	width: 80%;
+	border: 2px solid grey;
+	margin: 1%;
+	padding: 1%;
+	text-align: left;
+}
+img{
+	padding-left: 30%;
+	width: 35%;
+	height: 40%;
+}
+table,th,td{
+	border-collapse: collapse;
+}
+/*th,td{
+	padding: 15px;
+}*/
+#t2 td,th{
+	padding: 15px;
+	border: 1px solid white;
+	background: #404040;
+	color: white;
+}
+#t1 tr,td{
+	border-bottom: 1px solid lightgrey;
+	padding: 12px;
+
+}

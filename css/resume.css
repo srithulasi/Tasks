@@ -1,17 +1,39 @@
+
+article{
+	width: 20%;
+	height: 600px;
+	border: 2px solid grey;
+	margin: 1%;
+	padding-top: 0px;
+	padding: 2%;
+	text-align: left;
+}
+
+aside{
+	width: 70%;
+	height: 600px;
+	float: right;
+	overflow-y: scroll;
+	border: 2px solid grey;
+	margin: 1%;
+	padding: 1%;
+	text-align: left;
+}
 .parent{
 	display: flex;
 	flex-direction: row;
 }
 .side1{
 	width: 20%;
-	height: 100%;
+	height: 600px;
 	border: 2px solid grey;
 	margin: 1%;
 	padding: 1%;
 	text-align: left;
 }
 .side2{
-    height: 100%; 
+	overflow-y: scroll;
+    height: 600px; 
 	width: 80%;
 	border: 2px solid grey;
 	margin: 1%;
@@ -19,9 +41,11 @@
 	text-align: left;
 }
 img{
-	padding-left: 30%;
-	width: 35%;
-	height: 40%;
+	float: center;
+ 	width: 100px;
+ 	height: 80px;
+ 	padding-top: 5px;
+ 	padding-left: 60px;
 }
 table,th,td{
 	border-collapse: collapse;
@@ -40,3 +64,57 @@ table,th,td{
 	padding: 12px;
 
 }
+#t3 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t3 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t3 th {
+  background-color: black;
+  color: white;
+}
+/* mobile view minmum width 320 px and max 480 px */
+@media only screen and (min-width:320px) and (max-width: 480px){
+	.parent{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.parent>div{
+	width: 100%;
+	/*border: 2px solid blue;
+	padding: 2%;
+	margin: 1%;
+    text-align: center;
+   border-radius: 20px 20px 20px 20px ;
+   box-shadow: 20px 0px 20px 0px blue;*/
+}
+}
+/* tab view minmum width 481 px and max 760 px */
+@media only screen and (min-width:481px ) and (max-width:768px )
+{
+	.parent{
+		width: 100%;
+	}
+	.parent>div{
+		width: 100%;
+	}
+	body{
+		background: skyblue;
+	}
+}
+/* desktop view minmum width 768 px and max 1024 px */
+@media only screen and (min-width: 769px) and (max-width:1024px){
+	body{
+		background: teal;
+	}
+	img{
+		width: 200px;
+	}
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 486px){
+	
+} 
